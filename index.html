@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>LimitlessAIMobile</title>
+
+<meta name="theme-color" content="#0f1117">
+
+<link rel="manifest" href="manifest.json">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- LOGIN -->
+
+<div id="loginScreen" class="screen">
+
+<div class="login-card">
+
+<h1>LimitlessAI</h1>
+
+<p>Your personal AI.</p>
+
+<input
+id="passwordInput"
+type="password"
+placeholder="Password">
+
+<button id="loginButton">
+
+Unlock
+
+</button>
+
+<p id="loginError"></p>
+
+</div>
+
+</div>
+
+<!-- APP -->
+
+<div id="app" class="hidden">
+
+<!-- Sidebar -->
+
+<aside id="sidebar">
+
+<div class="sidebar-top">
+
+<h2>LimitlessAI</h2>
+
+<button id="newChat">
+
+＋ New Chat
+
+</button>
+
+</div>
+
+<div id="chatHistory">
+
+</div>
+
+<div class="sidebar-bottom">
+
+<button id="settingsButton">
+
+⚙ Settings
+
+</button>
+
+<button id="logoutButton">
+
+Logout
+
+</button>
+
+</div>
+
+</aside>
+
+<!-- Main -->
+
+<main>
+
+<header>
+
+<button id="menuButton">
+
+☰
+
+</button>
+
+<h2>
+
+LimitlessAIMobile
+
+</h2>
+
+</header>
+
+<div id="messages">
+
+</div>
+
+<div id="typingIndicator" class="hidden">
+
+LimitlessAI is thinking...
+
+</div>
+
+<div id="inputBar">
+
+<textarea
+id="prompt"
+rows="1"
+placeholder="Message LimitlessAI..."></textarea>
+
+<button id="send">
+
+➤
+
+</button>
+
+</div>
+
+</main>
+
+</div>
+
+<!-- SETTINGS -->
+
+<div id="settingsModal" class="hidden">
+
+<div class="settings-card">
+
+<h2>
+
+Settings
+
+</h2>
+
+<label>
+
+OpenRouter API Key
+
+</label>
+
+<input
+id="apiKey"
+type="password">
+
+<label>
+
+Model
+
+</label>
+
+<select id="model">
+
+<option>
+
+openai/gpt-5.5
+
+</option>
+
+<option>
+
+anthropic/claude-sonnet-4
+
+</option>
+
+<option>
+
+google/gemini-2.5-pro
+
+</option>
+
+</select>
+
+<button id="saveSettings">
+
+Save
+
+</button>
+
+<button id="closeSettings">
+
+Close
+
+</button>
+
+</div>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/api.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+  </html>
